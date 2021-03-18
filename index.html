@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Family Book</title>
+    </head>
+    <body>
+        <center><h2>Family Book</h2>
+
+            <img id= "img" >
+            <h3 id= "names"> </h3>
+            <button onclick= "next()">
+                Next
+            </button></center>
+        
+    </body>
+    <script>
+        var name_array= ["Arsh Bansal", "Aarushi Bansal", "Rajat Bansal", "Nidhi Bansal"];
+        var images= ["Arsh.jpg", "Aarushi.jpg", "Dad.jpg", "Mom.jpg"];
+
+        
+            var i = 0;
+
+            function next() { 
+                 document.getElementById("img").src = images[i];
+                 document.getElementById("names").innerHTML = name_array[i];
+            i++;  
+            }
+                     
+ 
+
+
+    </script>
+</html>
